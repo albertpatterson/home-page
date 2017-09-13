@@ -1,0 +1,25 @@
+.container {
+    width: 200px;
+    height: 300px;
+}
+
+p {
+    text-align: center;
+    margin: 0
+}
+
+#locationTextfield {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    list-style: none;
+    padding: 0px;
+}
+
+button {
+    width: 100%;
+}

@@ -117,3 +117,9 @@
     text-align: right;
 } 
 
+#weatherWidgetDemo{
+    width: 400px;
+    padding-left: 100px;
+    margin: 0 auto;
+    background-color: rgba(51, 122, 183, 0.13);
+}
