@@ -10,6 +10,8 @@ var path = require('path');
 var weatherWidget_location = require('./routes/weatherWidget/location');
 var weatherWidget_weather = require('./routes/weatherWidget/weather');
 
+// social media app
+const socialMedia = require('./apps/socialMedia/app.js');
 
 var app = express();
 
@@ -29,6 +31,10 @@ app.use(express.static(path.join(__dirname, 'dist')));
 // app.use('/users', users);
 app.use('/weatherWidget/location', weatherWidget_location);
 app.use('/weatherWidget/weather', weatherWidget_weather);
+
+app.use('/socialMedia', socialMedia);
+
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

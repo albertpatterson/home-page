@@ -1,0 +1,125 @@
+/* html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+} */
+
+.whiteText{
+    color: white;
+}
+
+.centeredText{
+    text-align: center;
+}
+
+.largeText{
+    font-size: 80px;
+}
+
+/* .mediumText{
+    font-size: 35px;
+} */
+
+/* .sectionText{
+    margin-top: -25px;
+    color: #337ab7;
+} */
+
+
+.header {
+    display: inline-block;
+    background-color: #292828;
+    width: 100%
+}
+
+.headshotCont {
+    display: inline-block;
+    vertical-align: middle;
+    /* height: 100%;
+    width: 100%; */
+}
+
+.headshot {
+    /* display: block;
+    margin: auto; */
+    /* height: 320px;
+    width: 320px; */
+    /* width: 100%;
+    height: auto; */
+    /* max-width: 500px; */
+}
+
+#picture{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: #292828;
+    border: none;
+}
+#nav {
+    width: 75%; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.valign{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#nav li{
+    overflow: hidden;
+}
+.personalDetail{
+    font-size: 35px;
+}
+
+
+.h350 {
+    height: 400px;
+}
+
+
+.sectionTitle{
+    margin-top: -25px;
+    color: #337ab7;
+    font-size: 35px;   
+    text-align: center; 
+}
+
+.sectionItemList{
+    list-style: none;
+    padding-left: 0px;
+}
+
+.sectionItemMain{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.sectionItem{
+    margin: 25px 0px;
+}
+
+.sectionItemDetails{
+    font-size: 18px;
+}
+
+.leftText{
+    text-align: left;
+}
+
+.centerText{
+    text-align: center;
+}
+
+.rightText{
+    text-align: right;
+} 
+
+#weatherWidgetDemo{
+    width: 400px;
+    padding-left: 100px;
+    margin: 0 auto;
+    background-color: rgba(51, 122, 183, 0.13);
+}
