@@ -1,4 +1,4 @@
-const router = require("Express").Router();
+const router = require("express").Router();
 const multer = require("multer");
 
 const sessionService = require("../services/sessionService");

@@ -1,4 +1,4 @@
-const router = require('Express').Router();
+const router = require('express').Router();
 
 // const databaseService = require('../services/mockDatabaseService');
 const databaseService = require('../services/mongodbDatabaseService');

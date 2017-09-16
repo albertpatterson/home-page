@@ -1,4 +1,4 @@
-const router = require('Express').Router();
+const router = require('express').Router();
 
 router.use("/message", require("./routes/message"));
 router.use("/personalData", require("./routes/personalData"));
