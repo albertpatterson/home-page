@@ -8,7 +8,7 @@ const databaseService = require('../services/mongodbDatabaseService');
 const PersonalData = require("../services/PersonalData");
 
 
-const pictureUpload = multer({dest: "./dist/static"}).single("picture");
+const pictureUpload = multer({dest: "./public/social-media/static"}).single("picture");
 
 const assertSession = sessionService.assertSession.bind(sessionService);
 
@@ -32,7 +32,7 @@ router.post("/",
         })
     },
     function(req, res, next){
-        let filepath = req.file ? req.file.path.slice(5) : null;
+        let filepath = req.file ? req.file.path.slice(20) : null;
         let personalData = new PersonalData(
             req.body.username,
             req.body.location,

@@ -22,7 +22,7 @@ export class SignUpService{
      * @private
      * @memberof SignUpService
      */
-    private _signUpUrl = 'api/signUp';
+    private _signUpUrl = 'api/personalData';
 
     /**
      * Creates an instance of SignUpService.

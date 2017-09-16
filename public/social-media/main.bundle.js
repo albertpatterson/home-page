@@ -2318,7 +2318,7 @@ var SignUpService = (function () {
          * @private
          * @memberof SignUpService
          */
-        this._signUpUrl = 'api/signUp';
+        this._signUpUrl = 'api/personalData';
     }
     /**
      * sign up for a member account and automatically sign in if successful
