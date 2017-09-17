@@ -1,9 +1,10 @@
 const router = require("express").Router();
 const multer = require("multer");
+const hashString = require("../utils/hashString");
 
 const sessionService = require("../services/sessionService");
 const ParamAsserter = require("../utils/ParamAsserter");
-// const databaseService = require('../services/mockDatabaseService');
+
 const databaseService = require('../services/mongodbDatabaseService');
 const PersonalData = require("../services/PersonalData");
 
@@ -41,7 +42,9 @@ router.post("/",
             filepath
         )
 
-        databaseService.addUser(req.body.username, personalData, req.body.password)
+        let hashPass = hashString(req.body.password);
+
+        databaseService.addUser(req.body.username, personalData, hashPass)
         .then(function(){
             res.status(201).end();
         }.bind(this))

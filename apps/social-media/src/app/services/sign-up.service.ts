@@ -7,6 +7,8 @@ import {assertStatus, handleError} from '../utils/handleResponse'
 
 import {AuthService} from './auth.service';
 
+import {hashString} from "../utils/hashString";
+
 /**
  * Service that allows new users to sign up for an account
  * 
@@ -51,13 +53,15 @@ export class SignUpService{
         console.log('send sign up request')
         return new Promise((res: Function, rej: Function)=>{
         
+            let hashPass = hashString(password);
+
             let formData: FormData = new FormData();
             formData.append('username',username);
             formData.append('location',location);
             formData.append('DOB',DOB);
             formData.append('business',business);
             formData.append("picture", picture, picture.name);
-            formData.append('password',password);
+            formData.append('password',hashPass);
 
             this.http.post(this._signUpUrl, formData)
             .toPromise()

@@ -1,16 +1,17 @@
 const session = require("express-session");
-// const databaseService = require('./mockDatabaseService');
+const hashString = require("../utils/hashString");
+
 const databaseService = require('./mongodbDatabaseService');
 let sessionService = {
 
     signIn: function(req){
         let username = req.body.username;
-        let password = req.body.password;
+        let hashPass = hashString(req.body.password);
 
         return new Promise(function(res, rej){
             databaseService.getPassword(username)
             .then(function(ExpectedPassword){
-                if(password===ExpectedPassword){
+                if(hashPass===ExpectedPassword){
                     req.session.username = username;
                     res(true);
                 }else{
