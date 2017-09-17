@@ -7,10 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VariableLocationWeatherWidgetComponent implements OnInit {
 
-  private coords: string = "";
-  private location: string = "Update Location";
+  public coords: string = "";
+  public location: string = "Update Location";
 
-  private view: string = "location";
+  public view: string = "location";
 
   constructor() { }
 

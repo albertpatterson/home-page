@@ -12,12 +12,12 @@ export class LocationSelectorComponent {
 
   public selectLocation: EventEmitter<string> = new EventEmitter();
 
-  private namesAndCoords: any[];
-  private names: string[];
+  public namesAndCoords: any[];
+  public names: string[];
 
   constructor(private locationService: LocationService) { }
 
-  private locationTextChanged(event){
+  public locationTextChanged(event){
     let query = event.target.value;
     if(query){
       this.locationService.filterLocations(query)
@@ -31,7 +31,7 @@ export class LocationSelectorComponent {
     }
   }
 
-  private doSelectLocation(event){
+  public doSelectLocation(event){
     let index = event.target.value;
     this.selectLocation.next(this.namesAndCoords[index]);
   }

@@ -10,24 +10,24 @@ import {WeatherService} from "../services/weather.service";
 })
 export class WeatherWidgetComponent implements OnChanges {
 
-  private status: string;
+  public status: string;
 
   public location: string;
   public coords: string;
 
   public updateLocation:EventEmitter<any> = new EventEmitter();
   
-  private date: string;
+  public date: string;
 
-  private weatherCondition: string;
+  public weatherCondition: string;
 
-  private temperature: string;
+  public temperature: string;
 
-  private precipitation: string;
+  public precipitation: string;
   
-  private wind: string;
+  public wind: string;
 
-  private doUpdateLocation(): void{
+  public doUpdateLocation(): void{
     this.updateLocation.next();
   }
 
