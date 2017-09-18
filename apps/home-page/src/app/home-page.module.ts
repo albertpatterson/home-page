@@ -27,7 +27,7 @@ import { HomePageComponent } from './home-page.component';
   bootstrap:    [ HomePageComponent ],
   providers: [
     WeatherService,
-    LocationService,
+    LocationService
   ]
 })
 export class HomePageModule { }

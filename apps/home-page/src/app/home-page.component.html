@@ -1,14 +1,14 @@
 <div id="homePageContainer" class="container-fluid">
     <p class="whiteText centeredText largeText">Albert Patterson</p>
-    <div class="header row">
-      <div class="col-md-4 h350">
-        <div id="picture" class="thumbnail">
+    <div class="row">
+      <div class="col-md-6 h350">
+        <div id="picture" class="thumbnail valign">
             <img src="assets/businessCat.png">
         </div>
       </div>
-      <div class="col-md-8 h350">
+      <div class="col-md-6 h350">
           <nav id="nav" class="navbar navbar-default valign">
-            <ul class="nav nav-stacked">
+            <ul id="navList" class="fullwidth nav nav-stacked">
                 <li>
                     <a class="personalDetail" href="mailto:apatterson@alumni.cmu.edu">apatterson@alumni.cmu.edu</a>
                 </li>
@@ -69,8 +69,8 @@
           </li>
   
           <li class="sectionItem">
-            <p class="sectionItemMain">Weather Widget: <a href="#">Source Code</a>, <a data-toggle="collapse" data-target="#weatherWidgetDemoCollaps">Demo</a></p>
-            <div class="collapse" id="weatherWidgetDemoCollaps">
+            <p class="sectionItemMain">Weather Widget: <a href="#">Source Code</a>, <a id="weatherWidgetDemoCollapseButton" data-toggle="collapse" data-target="#weatherWidgetDemoCollapse">Demo</a></p>
+            <div class="collapse" id="weatherWidgetDemoCollapse">
               <div id="weatherWidgetDemo">
                 <variable-location-weather-widget></variable-location-weather-widget>
               </div>
@@ -86,7 +86,7 @@
           </li>
 
           <li class="sectionItem">
-            <p class="sectionItemMain">Transitions and Animations: <a href="https://github.com/albertpatterson/style_transitions_animations">Source Code</a>, <a data-toggle="collapse" data-target="#animationsAndTransitionsDemoCollapse">Demo</a></p>
+            <p class="sectionItemMain">Transitions and Animations: <a href="https://github.com/albertpatterson/style_transitions_animations">Source Code</a>, <a id="animationsAndTransitionsDemoCollapseButton" data-toggle="collapse" data-target="#animationsAndTransitionsDemoCollapse">Demo</a></p>
             <div class="collapse" id="animationsAndTransitionsDemoCollapse">
               <iframe id="animationsAndTransitionsDemo" src="/transitions-animations-gallery/"></iframe>
             </div>
