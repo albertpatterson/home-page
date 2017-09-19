@@ -26,6 +26,11 @@ export class HomePageComponent implements OnInit {
   constructor() { }
   
   ngOnInit() {
+
+    if(innerWidth>970){
+      document.getElementById("nav").style.marginTop = 230-83+"px";
+    }
+
     let demo = getSearchParams().demo;
     if(demo){
       switch(demo.toLowerCase()){

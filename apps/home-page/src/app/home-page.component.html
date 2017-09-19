@@ -1,13 +1,13 @@
 <div id="homePageContainer" class="container-fluid">
     <p class="whiteText centeredText largeText">Albert Patterson</p>
     <div class="row">
-      <div class="col-md-6 h350">
-        <div id="picture" class="thumbnail valign">
-            <img src="assets/businessCat.png">
+      <div class="col-md-6">
+        <div id="picture" class="thumbnail">
+            <img src="assets/me.png">
         </div>
       </div>
-      <div class="col-md-6 h350">
-          <nav id="nav" class="navbar navbar-default valign">
+      <div class="col-md-6">
+          <nav id="nav" class="navbar navbar-default">
             <ul id="navList" class="fullwidth nav nav-stacked">
                 <li>
                     <a class="personalDetail" href="mailto:apatterson@alumni.cmu.edu">apatterson@alumni.cmu.edu</a>
@@ -24,8 +24,7 @@
     </div>
     <div class="well">
       <p class="sectionTitle">Bio</p>
-      <div class="row">
-      </div>
+      <p id="bio">I am passionate about learning and growing through challenging projects and assignments, and I enjoy collaborating with others who are passionate about their craft. My expertise is in full-stack web development and testing. At MathWorks, I work with the Quality Engineering team and focus on testing of web applications using QUnit and FuncUnit, but in my free time I also enjoy using JavaScript/Angular/HTML5/CSS with Node.js or Java to implement fast, interactive web application and using Jasmine/Karma to test my own apps.</p>
     </div>
     <div class="well">
       <p class="sectionTitle">Personal Projects</p>
@@ -36,32 +35,26 @@
             <p class="sectionItemMain">Social Media Site: <a href="/social-media">Demo</a></p>
             <ul class = "sectionItemMainDetails">
               <li>
-                  Front End: <a href="#">Source Code</a> 
+                  Front End: <a href="https://github.com/albertpatterson/SocialMediaSite-Angular-Front-End">Source Code</a> 
                   <ul>
                     <li>
-                      Description of front end project
-                    </li>
-                    <li>
-                      Description of front end project
-                    </li>
-                    <li>
-                      Description of front end project
-                    </li>                                        
+                      Developed a social media site using the MEAN stack and deployed it on an EC2 instance, allowing users to create and browse profiles, follow other users, send messages, post comments and upload media.
+                    </li>                                     
                   </ul>
               </li>
               <li>
-                  Back End (Node.js and Express.js): <a href="#">Source Code</a>
+                  Back End (Node.js and Express.js): <a href="https://github.com/albertpatterson/SocialMediaSite-API-Mongo-Node-Express">Source Code</a>
                   <ul>
                     <li>
-                      Description of back end node project
+                      Developed an implementation of the back end in Node.js using Express.js to expose the web API, handle requests, and query and update data stored in a MongoDB database
                     </li>
                   </ul>                  
               </li>
               <li>
-                  Back End (Java and Servlets): <a href="#">Source Code</a>
+                  Back End (Java and Servlets): <a href="https://github.com/albertpatterson/SocialMediaSite-API-Mongo-Servlet">Source Code</a>
                   <ul>
                     <li>
-                      Description of back end java project
+                      Developed a second implementation of the back end using Java and Servlets, providing the same functionality as the Node.js implementation
                     </li>
                   </ul>                          
               </li>
@@ -69,7 +62,7 @@
           </li>
   
           <li class="sectionItem">
-            <p class="sectionItemMain">Weather Widget: <a href="#">Source Code</a>, <a id="weatherWidgetDemoCollapseButton" data-toggle="collapse" data-target="#weatherWidgetDemoCollapse">Demo</a></p>
+            <p class="sectionItemMain">Weather Widget: <a href="https://github.com/albertpatterson/WeatherWidget">Source Code</a>, <a id="weatherWidgetDemoCollapseButton" data-toggle="collapse" data-target="#weatherWidgetDemoCollapse">Demo</a></p>
             <div class="collapse" id="weatherWidgetDemoCollapse">
               <div id="weatherWidgetDemo">
                 <variable-location-weather-widget></variable-location-weather-widget>
@@ -77,10 +70,7 @@
             </div>
             <ul class = "sectionItemMinorDetails">
               <li>
-                description 1
-              </li>
-              <li>
-                description 2
+                  Designed and developed an Angular component with services that allows a user to select their location and then fetches and displays weather data in a theme based on current weather
               </li>
             </ul>
           </li>
@@ -92,10 +82,7 @@
             </div>
             <ul class = "sectionItemMinorDetails">
               <li>
-                description 1
-              </li>
-              <li>
-                description 2
+                  Designed a gallery of small widgets applying CSS transitions and animations
               </li>
             </ul>
           </li>
@@ -104,10 +91,7 @@
             <p class="sectionItemMain">IP Updater: <a href="https://github.com/albertpatterson/IP-Updater">Source Code</a></p>
             <ul class = "sectionItemMinorDetails">
               <li>
-                description 1
-              </li>
-              <li>
-                description 2
+                Developed a Node.js utility to regularly query the IP address of a machine (which is typically dynamic) and update the value stored in a shared document so that the machine can always be accessed remotely
               </li>
             </ul>
           </li>
@@ -116,10 +100,10 @@
             <p class="sectionItemMain">Searchable Movie List: <a href="https://github.com/albertpatterson/SearchableMovieList">Source Code</a></p>
             <ul class = "sectionItemMinorDetails">
               <li>
-                description 1
+                Developed a simple app providing a searchable movie list, which utilizes all parts of the full web stack and is useful for trying out new technologies
               </li>
               <li>
-                description 2
+                This version utilizes plain HTML, Node.js &amp; Express, and DynamoDB for deployment via Elastic Beanstalk (Amazon Web Sevices/AWS)
               </li>
             </ul>
           </li>
@@ -128,10 +112,7 @@
             <p class="sectionItemMain">Two-Port Band-Pass Filter Simulation: <a href="https://github.com/albertpatterson/Two-Port-Band-Pass-Filter-Simulation">Source Code</a></p>
             <ul class = "sectionItemMinorDetails">
               <li>
-                description 1
-              </li>
-              <li>
-                description 2
+                Created C++ utilities for simulating the frequency response of two-port filters
               </li>
             </ul>
           </li>          
@@ -140,10 +121,7 @@
             <p class="sectionItemMain">Bookmarklets: <a href="https://github.com/albertpatterson/bookmarklets">Source Code</a></p>
             <ul class = "sectionItemMinorDetails">
               <li>
-                description 1
-              </li>
-              <li>
-                description 2
+                Developed a library of bookmarklets for automating common web browsing tasks
               </li>
             </ul>
           </li>
@@ -167,7 +145,31 @@
             <ul class = "sectionItemMainDetails">
 
               <li>
-                Project 1
+                Developed a JavaScript test tool for client side memory leak detection in Chrome, using the performance API
+                <ul>
+                  <li>
+                    detail 1
+                  </li>
+                  <li>
+                    detail 2
+                  </li>                                     
+                </ul>
+              </li>
+
+              <li>
+                Developed JavaScript test tools to perform system level testing of App Designer (a MATLAB web app) by sending HTTP requests to MATLAB and synchronizing response handling with asynchronous FuncUnit actions
+                <ul>
+                  <li>
+                    Gave a department-wide tech-talk on communicating with MATLAB in JavaScript tests and its applications
+                  </li>
+                  <li>
+                    detail 2
+                  </li>                                     
+                </ul>
+              </li>
+
+              <li>
+                Develop and maintain test strategies and procedures, test tools, and suites of automated integration and system level tests of the functional behavior and performance of web applications and widgets 
                 <ul>
                   <li>
                     detail 1
@@ -188,7 +190,7 @@
                     detail 2
                   </li>                                     
                 </ul>
-              </li>
+                </li>
 
             </ul>
 
@@ -203,7 +205,7 @@
               <ul class = "sectionItemMainDetails">
                   
                 <li>
-                  Project 1
+                  Lead a team of engineers and trained new hires to provided technical support via email and telephone for MathWorks customers on topics such as core MATLAB, OOP, optimization, statistics, and graphics
                   <ul>
                     <li>
                       detail 1
@@ -215,7 +217,7 @@
                 </li>
   
                 <li>
-                  Project 2
+                  Completed over 400 cases, lead two trainings, and provided technical and procedural guidance to new ASEs
                   <ul>
                     <li>
                       detail 1
@@ -226,6 +228,30 @@
                   </ul>
                 </li>
   
+                <li>
+                  Worked with four Quality Engineering teams to develop test strategies, suits, and tools for MATLAB desktop features and apps
+                  <ul>
+                    <li>
+                      detail 1
+                    </li>
+                    <li>
+                      detail 2
+                    </li>                                     
+                  </ul>
+                </li>
+
+                <li>
+                  Project 2
+                  <ul>
+                    <li>
+                      detail 1
+                    </li>
+                    <li>
+                      detail 2
+                    </li>                                     
+                  </ul>
+                </li>
+
               </ul>
 
           </li>
@@ -243,28 +269,53 @@
               <p class="col-md-4 centerText">December 2014</p>
             </div>
             <ul class = "sectionItemMainDetails">
-                
+              
               <li>
-                Project 1
+                GPA: 3.52/4.00
+              </li>
+
+              <li>
+                Selected Coursework
                 <ul>
                   <li>
-                    detail 1
+                    Developed evolutionary strategy and simulated annealing algorithms for optimization of an array of MEMS filters subject to design constraints, compensating for process variations which limit yield and performance
                   </li>
                   <li>
-                    detail 2
+                    Developed packages for applying compressed sensing for image compression and reconstruction, and for classifying brain signals via a support vector machine using an interior point method with Newton’s method
                   </li>                                     
                 </ul>
               </li>
 
               <li>
-                Project 2
+                Research
                 <ul>
                   <li>
-                    detail 1
+                    Developed 3D-integrated, MEMS-CMOS, self-healing, ultra-high frequency band-pass filters to enhance device yield and performance, compensate for performance-limiting variations, and enable device reconfigurability
                   </li>
                   <li>
-                    detail 2
+                    Developed an extensive package of tools for RF MEMS modelling, layout optimization, and yield analysis
                   </li>                                     
+                </ul>
+              </li>
+
+              <li>
+                Publications
+                <ul>
+                  <li>
+                    1
+                  </li>
+                  <li>
+                    2
+                  </li>                                     
+                </ul>
+              </li>
+
+              <li>
+                Accolades
+                <ul>
+                  <li>
+                    Carnegie Institute of Technology Dean’s Tuition Fellowship
+                  </li>                                  
                 </ul>
               </li>
 
@@ -281,26 +332,30 @@
             <ul class = "sectionItemMainDetails">
                 
               <li>
-                Project 1
-                <ul>
-                  <li>
-                    detail 1
-                  </li>
-                  <li>
-                    detail 2
-                  </li>                                     
-                </ul>
+                  GPA: 3.91/4.00
               </li>
 
               <li>
-                Project 2
+                Accolades
                 <ul>
                   <li>
-                    detail 1
-                  </li>
+                    Dean’s List - six semesters
+                  </li>    
                   <li>
-                    detail 2
-                  </li>                                     
+                    Sigma Pi Sigma honor society
+                  </li>    
+                  <li>
+                    Phi Beta Kappa honor society
+                  </li>    
+                  <li>
+                    The Order of Gownsmen honor society
+                  </li>    
+                  <li>
+                    Academic Competitiveness Grant: 2006, 2007
+                  </li>    
+                  <li>
+                    National SMART Grant: 2008 and 2009
+                  </li>                                   
                 </ul>
               </li>
 

@@ -37,10 +37,11 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 
-
 app.use('/home-page/weatherWidget', weatherWidgetRoutes);
 app.use('/social-media/api', socialMediaRoutes);
-
+app.use('/', (req, res)=>{
+  res.redirect("/home-page/")
+});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
