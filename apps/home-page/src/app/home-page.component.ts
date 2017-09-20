@@ -22,7 +22,6 @@ function getSearchParams(): any{
 })
 export class HomePageComponent implements OnInit {
 
-  // constructor(private activatedRoute: ActivatedRoute) { }
   constructor() { }
   
   ngOnInit() {
